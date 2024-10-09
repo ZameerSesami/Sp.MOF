@@ -89,6 +89,12 @@
     </Map>
   </ItemGroup>
   <ItemGroup>
+    <Map Include="Map_CumulusPOXML_DB.btm">
+      <TypeName>Map_CumulusPOXML_DB</TypeName>
+      <Namespace>Sp.MOF.Transforms</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Content Include="Map_CumulusPOXML_DB.xsl" />
     <Content Include="Map_PeppolGeBizXML_DB.xsl" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
