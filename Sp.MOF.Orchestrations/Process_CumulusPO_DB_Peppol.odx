@@ -1,0 +1,953 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="d12b2b45-0fed-489d-a69b-6dd58fe24f84" LowerBound="1.1" HigherBound="313.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Sp.MOF.Orchestrations" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="971744f8-0022-4d02-acc4-24873874bf3f" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_RcvCumulusPODocIdsPoll" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="7c6befcf-5e71-44b9-9675-9e9688b5e378" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="6819a55e-538e-4960-a0c7-c2aebff6bc43" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.101">
+                    <om:Property Name="Ref" Value="Sp.MOF.Schemas.uspPollCumulusPODocIds_TypedPolling_InterfacePODocIdsCumulus.TypedPolling" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="d2ac5f38-8ee0-407a-a3bb-1f357f9fda9e" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_SndRcvCumulusPOData" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="72e5f21e-c7cc-4d3b-b7df-b5fd7d42ac2e" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="231370ae-ba02-4e20-9cf8-7bb8d7a71948" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.75">
+                    <om:Property Name="Ref" Value="Sp.MOF.Schemas.uspPOData_TypedProcedure_dbo.InterfaceMOFPOData" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="968b394f-d58b-46ca-93b7-a855247743d8" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="15.77" HigherBound="15.147">
+                    <om:Property Name="Ref" Value="Sp.MOF.Schemas.uspPOData_TypedProcedure_dbo.InterfaceMOFPODataResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="16254698-58ab-45bd-bb0a-5c1333027068" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_SndRcvCumulusPOStatusUpdate" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="f0e83f96-7cdb-42d0-b91a-6ebd1ce20020" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="3ef2a351-e8f9-4a94-a7f8-6b9efe56d7d5" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.85">
+                    <om:Property Name="Ref" Value="Sp.MOF.Schemas.uspPOUpdate_TypedProcedure_dbo.InterfaceMOFPOStatusUpdate" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="023bebcc-7987-4afa-a25d-4eb28c41efe7" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="22.87" HigherBound="22.167">
+                    <om:Property Name="Ref" Value="Sp.MOF.Schemas.uspPOUpdate_TypedProcedure_dbo.InterfaceMOFPOStatusUpdateResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="cecece7e-10ed-4edb-8e8f-f2c8ee4ea1f3" ParentLink="Module_PortType" LowerBound="25.1" HigherBound="32.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_SndCumulusPODBToPeppolErrorEmail" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="6dda7028-e2bf-44d4-aa50-db3cbd3406b9" ParentLink="PortType_OperationDeclaration" LowerBound="27.1" HigherBound="31.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="1f80161a-fb86-4316-95fa-fa7c11e40bc7" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="29.13" HigherBound="29.31">
+                    <om:Property Name="Ref" Value="Sp.MOF.Orchestrations.msgMultiErrorEmail" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="1b134bba-b621-46fc-95ef-80f2e244c795" ParentLink="Module_ServiceDeclaration" LowerBound="32.1" HigherBound="312.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Process_CumulusPO_DB_Peppol" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="a585ad26-a726-416d-b3ac-30f012ca2e70" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="55.1" HigherBound="56.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varTempXML" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="e4ea3e0f-a5f1-4300-bf95-c95e3db52aed" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="56.1" HigherBound="57.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="Sp.MOF.CallPeppolAPI.PostPeppolXMLData" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varobjPeppolAPI" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="81696327-7493-498d-8976-939345386dc7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="57.1" HigherBound="58.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varLoopItem" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="541f22c8-6b52-4b6b-b163-95cb399a9efc" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="58.1" HigherBound="59.1">
+                <om:Property Name="InitialValue" Value="0" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varLoopCounter" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="5845c06c-4b60-4461-84d7-fb0bf132cee7" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="59.1" HigherBound="60.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varExceptionmsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="b7fff56a-3e31-4ad0-bf4b-ca765a3f8d3e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="60.1" HigherBound="61.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Text.StringBuilder" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varEmailBody" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="a5cc3162-107b-4c48-a23f-a58eb5ef38ad" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="61.1" HigherBound="62.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varDocId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="d31f2c75-e5bd-4979-9c1f-9ddc52562605" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="62.1" HigherBound="63.1">
+                <om:Property Name="InitialValue" Value="0" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varDocCount" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="c39cbb01-5570-4e8a-ad0d-4c111c7ff0b1" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="63.1" HigherBound="64.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varAPIStatus" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="2622eb35-743a-4b3e-af18-02f02d4e0982" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="64.1" HigherBound="65.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varAPIResp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="07114abc-e9cb-44ac-a046-f1793d9b58e3" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="65.1" HigherBound="66.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varAPIErrorMessage" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="794ed701-ceef-4507-848c-ddcd86c5eda6" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="66.1" HigherBound="67.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varAPIDate" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="80e989a8-9997-49be-b82a-d82089c5f1ea" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="45.1" HigherBound="46.1">
+                <om:Property Name="Type" Value="Sp.MOF.Schemas.uspPOData_TypedProcedure_dbo.InterfaceMOFPODataResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msguspPOResp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="1fe03406-c39e-430b-9724-c279d751963a" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="46.1" HigherBound="47.1">
+                <om:Property Name="Type" Value="Sp.MOF.Schemas.uspPOData_TypedProcedure_dbo.InterfaceMOFPOData" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msguspPOReq" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f3b273c7-58e4-42c7-bd00-306990a8caa0" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="47.1" HigherBound="48.1">
+                <om:Property Name="Type" Value="Sp.MOF.Schemas.uspPollCumulusPODocIds_TypedPolling_InterfacePODocIdsCumulus.TypedPollingResultSet0" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgSingleDocId" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="fe2e6b8e-2756-4b2e-b261-7ebcfc02022e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="48.1" HigherBound="49.1">
+                <om:Property Name="Type" Value="Sp.MOF.Schemas.uspPOUpdate_TypedProcedure_dbo.InterfaceMOFPOStatusUpdateResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgPOStatusUpdResp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="c3b97e96-b76f-4c7b-8890-e5f22309046e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="49.1" HigherBound="50.1">
+                <om:Property Name="Type" Value="Sp.MOF.Schemas.uspPOUpdate_TypedProcedure_dbo.InterfaceMOFPOStatusUpdate" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgPOStatusUpdReq" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="d51eaad2-bd54-4efa-a501-db70f6174bb6" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="50.1" HigherBound="51.1">
+                <om:Property Name="Type" Value="Sp.MOF.Schemas.PeppolPOMOF" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgPeppolPOXML" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="de9b11f7-311f-4485-8296-9ce5932c2fc8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="51.1" HigherBound="52.1">
+                <om:Property Name="Type" Value="Sp.MOF.Schemas.PeppolAPIResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgPeppolAPIResp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f88b06c8-e33b-4d6c-8eda-a174e02370bf" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="52.1" HigherBound="53.1">
+                <om:Property Name="Type" Value="Sp.MOF.Orchestrations.msgMultiErrorLogs" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgErrorLogs" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="62f7bd34-dd69-4990-b52a-d14cb50ffe51" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="53.1" HigherBound="54.1">
+                <om:Property Name="Type" Value="Sp.MOF.Orchestrations.msgMultiErrorEmail" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgErrorEmail" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="81e4b885-f705-4de0-9748-5fd3d9d7bbab" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="54.1" HigherBound="55.1">
+                <om:Property Name="Type" Value="Sp.MOF.Schemas.uspPollCumulusPODocIds_TypedPolling_InterfacePODocIdsCumulus.TypedPolling" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgPollDocIds" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="c8efe02a-623d-4589-b250-48ec588e9331" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="325bbc6e-b6a9-4e10-bc12-2a02ecd279cc" ParentLink="ServiceBody_Statement" LowerBound="69.1" HigherBound="83.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Port_RcvCumulusPODocIdsPoll" />
+                    <om:Property Name="MessageName" Value="msgPollDocIds" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="becf2faf-663a-438d-b3fd-439ce10f6bf4" ParentLink="ServiceBody_Statement" LowerBound="83.1" HigherBound="87.1">
+                    <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;Cumulus DB_Peppol Process Start&quot;,&quot;Cumulus DB_Peppol Process Started&quot;);&#xD;&#xA;varDocCount = xpath(msgPollDocIds,&quot;count(/*[local-name()='TypedPolling' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePODocIdsCumulus']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePODocIdsCumulus']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePODocIdsCumulus']/*[local-name()='DocumentID' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePODocIdsCumulus'])&quot;);&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;Cumulus Doc Count&quot;,varDocCount.ToString());&#xD;&#xA;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Process_Start" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="While" OID="29f86527-2e4e-433f-b7e9-3c96037e231f" ParentLink="ServiceBody_Statement" LowerBound="87.1" HigherBound="308.1">
+                    <om:Property Name="Expression" Value="varLoopCounter &lt; varDocCount" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Loop_DocumentIds" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Scope" OID="795d26a5-6272-4983-a8fd-9c4cceb062d7" ParentLink="ComplexStatement_Statement" LowerBound="90.1" HigherBound="305.1">
+                        <om:Property Name="InitializedTransactionType" Value="True" />
+                        <om:Property Name="IsSynchronized" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Scope_PeppolXml" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="VariableAssignment" OID="27b3d5fe-84db-430d-b13a-d6bdb53d3637" ParentLink="ComplexStatement_Statement" LowerBound="95.1" HigherBound="98.1">
+                            <om:Property Name="Expression" Value="varLoopCounter = varLoopCounter + 1;&#xD;&#xA;varLoopItem = varLoopCounter.ToString();" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Incr_Counter" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="6e09ccbc-2bfa-4076-9343-8522d5b2cd9f" ParentLink="ComplexStatement_Statement" LowerBound="98.1" HigherBound="106.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Const_SingleDocId" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="ed2b1465-707a-449e-a8f7-f2aad308e199" ParentLink="Construct_MessageRef" LowerBound="99.35" HigherBound="99.49">
+                                <om:Property Name="Ref" Value="msgSingleDocId" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="0425b52b-29ef-4a87-af46-8255d353e60f" ParentLink="ComplexStatement_Statement" LowerBound="101.1" HigherBound="105.1">
+                                <om:Property Name="Expression" Value="msgSingleDocId = xpath(msgPollDocIds, &quot;/*[local-name()='TypedPolling' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePODocIdsCumulus']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePODocIdsCumulus']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePODocIdsCumulus'][&quot;+ varLoopItem +&quot;]&quot; );&#xD;&#xA;varDocId = msgSingleDocId.DocumentID;&#xD;&#xA;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MsgAssign_InvoiceHeaderRequest" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Construct" OID="f1a8605b-07fb-41f1-99fa-37f1b4e4eec1" ParentLink="ComplexStatement_Statement" LowerBound="106.1" HigherBound="114.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Cont_GetPOData" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="6e9cfb56-7747-4358-9ce7-3b4eb10c6e7c" ParentLink="Construct_MessageRef" LowerBound="107.35" HigherBound="107.46">
+                                <om:Property Name="Ref" Value="msguspPOReq" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="99c4d1af-68dc-4429-8b61-13bc680fc90e" ParentLink="ComplexStatement_Statement" LowerBound="109.1" HigherBound="113.1">
+                                <om:Property Name="Expression" Value="varTempXML = new System.Xml.XmlDocument();&#xD;&#xA;varTempXML.LoadXml(&quot;&lt;ns0:InterfaceMOFPOData xmlns:ns0='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo'&gt;&lt;ns0:DocumentID&gt;&quot; + varDocId + &quot;&lt;/ns0:DocumentID&gt;&lt;ns0:HubID&gt;Cumulus&lt;/ns0:HubID&gt;&lt;/ns0:InterfaceMOFPOData&gt;&quot;);&#xD;&#xA;msguspPOReq = varTempXML;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_6" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="76c65b24-c70e-4a99-b5f0-86d4b3acab68" ParentLink="ComplexStatement_Statement" LowerBound="114.1" HigherBound="129.1">
+                            <om:Property Name="Expression" Value="&#xA;if(System.Convert.ToString(Sp.MOF.Common.SSOClientHelper.Read(&quot;Sp.MOF&quot;, &quot;ShowMOFAdminLogs&quot;)) == &quot;Yes&quot;)&#xA;{&#xA;    varTempXML = new System.Xml.XmlDocument();&#xA;    varTempXML = msguspPOReq;&#xA;    if(varTempXML.OuterXml.Length &lt; 30000)&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;msguspPOReq&quot;,varTempXML.OuterXml);&#xA;    }&#xA;    else&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;msguspPOReq&quot;,varTempXML.OuterXml.Substring(1,29500));&#xA;    }&#xA;}" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ShowLogs" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="bd0596b7-83f0-49a4-b37f-0a42bf9cd2e6" ParentLink="ComplexStatement_Statement" LowerBound="129.1" HigherBound="131.1">
+                            <om:Property Name="PortName" Value="Port_SndRcvCumulusPOData" />
+                            <om:Property Name="MessageName" Value="msguspPOReq" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_2" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="0383e68b-b602-481e-b36f-fd3e29024ea7" ParentLink="ComplexStatement_Statement" LowerBound="131.1" HigherBound="133.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="Port_SndRcvCumulusPOData" />
+                            <om:Property Name="MessageName" Value="msguspPOResp" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Receive_2" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="dfe6bf08-8d14-4a41-9feb-a2eb0b527d5c" ParentLink="ComplexStatement_Statement" LowerBound="133.1" HigherBound="139.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Const_PeppolXml" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="Transform" OID="e0b095c3-8183-4bc2-896d-b3bfdafbe27f" ParentLink="ComplexStatement_Statement" LowerBound="136.1" HigherBound="138.1">
+                                <om:Property Name="ClassName" Value="Sp.MOF.Transforms.Map_DBPO_PeppolPO" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Transform_1" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessagePartRef" OID="a3a4ae56-7544-44ba-b835-dbb0aaf77202" ParentLink="Transform_OutputMessagePartRef" LowerBound="137.40" HigherBound="137.54">
+                                    <om:Property Name="MessageRef" Value="msgPeppolPOXML" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_2" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessagePartRef" OID="d95783dc-b30b-472a-bf39-4f74fd6f8d99" ParentLink="Transform_InputMessagePartRef" LowerBound="137.95" HigherBound="137.107">
+                                    <om:Property Name="MessageRef" Value="msguspPOResp" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Name" Value="MessagePartReference_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="12985200-9e9c-4d4e-95ea-922d6915b985" ParentLink="Construct_MessageRef" LowerBound="134.35" HigherBound="134.49">
+                                <om:Property Name="Ref" Value="msgPeppolPOXML" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="284b947a-5d01-4bff-bd84-e60ed1be4582" ParentLink="ComplexStatement_Statement" LowerBound="139.1" HigherBound="164.1">
+                            <om:Property Name="Expression" Value="&#xA;if(System.Convert.ToString(Sp.MOF.Common.SSOClientHelper.Read(&quot;Sp.MOF&quot;, &quot;ShowMOFAdminLogs&quot;)) == &quot;Yes&quot;)&#xA;{&#xA;    varTempXML = new System.Xml.XmlDocument();&#xA;    varTempXML = msguspPOResp;&#xA;    if(varTempXML.OuterXml.Length &lt; 30000)&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;msguspPOResp&quot;,varTempXML.OuterXml);&#xA;    }&#xA;    else&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;msguspPOResp&quot;,varTempXML.OuterXml.Substring(1,29500));&#xA;    }&#xA;    varTempXML = new System.Xml.XmlDocument();&#xA;    varTempXML = msgPeppolPOXML;&#xA;    if(varTempXML.OuterXml.Length &lt; 30000)&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;msgPeppolPOXML&quot;,varTempXML.OuterXml);&#xA;    }&#xA;    else&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;msgPeppolPOXML&quot;,varTempXML.OuterXml.Substring(1,29500));&#xA;    }&#xA;}" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ShowLogs" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="8fd1ddb3-9f17-4b02-a429-d99c2ed826ad" ParentLink="ComplexStatement_Statement" LowerBound="164.1" HigherBound="178.1">
+                            <om:Property Name="Expression" Value="varTempXML=msgPeppolPOXML;&#xD;&#xA;varAPIResp = varobjPeppolAPI.PostResponseData(varTempXML.OuterXml,&quot;&quot;);&#xD;&#xA;if(System.Convert.ToString(Sp.MOF.Common.SSOClientHelper.Read(&quot;Sp.MOF&quot;, &quot;ShowMOFAdminLogs&quot;)) == &quot;Yes&quot;)&#xA;{&#xA;    if(varAPIResp.Length &lt; 30000)&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;APIResp&quot;,varAPIResp);&#xA;    }&#xA;    else&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;APIResp&quot;,varAPIResp.Substring(1,29500));&#xA;    }&#xA;}" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Call_API_Peppol" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="79bd6a70-d9dd-4461-ac29-0a17d8cf3053" ParentLink="ComplexStatement_Statement" LowerBound="178.1" HigherBound="186.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Const_PeppolAPIResp" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="3f46fb7d-a8a1-4ec1-b1a6-44e123f93488" ParentLink="Construct_MessageRef" LowerBound="179.35" HigherBound="179.51">
+                                <om:Property Name="Ref" Value="msgPeppolAPIResp" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="3a04b133-59c0-4e4d-b8e2-e2b9939b97dc" ParentLink="ComplexStatement_Statement" LowerBound="181.1" HigherBound="185.1">
+                                <om:Property Name="Expression" Value="varTempXML = new System.Xml.XmlDocument();&#xA;varTempXML.LoadXml(varAPIResp);&#xA;msgPeppolAPIResp = varTempXML;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_1" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="be4db3ce-1021-43fa-aaf3-1e92451da722" ParentLink="ComplexStatement_Statement" LowerBound="186.1" HigherBound="201.1">
+                            <om:Property Name="Expression" Value="if(System.String.IsNullOrEmpty(msgPeppolAPIResp.Timestamp))&#xD;&#xA;{&#xD;&#xA;    varAPIDate = System.DateTime.Now.ToString();&#xD;&#xA;}&#xD;&#xA;if(msgPeppolAPIResp.Succeed == false)&#xD;&#xA;{&#xD;&#xA;    varAPIStatus = &quot;Failed&quot;;&#xD;&#xA;    varAPIErrorMessage = msgPeppolAPIResp.ErrorDescription;&#xD;&#xA;}&#xD;&#xA;else&#xD;&#xA;{&#xD;&#xA;    varAPIStatus = &quot;Success&quot;;&#xD;&#xA;    varAPIErrorMessage = msgPeppolAPIResp.InvoiceSubmissionID;&#xD;&#xA;}" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Assign_APIError" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Construct" OID="982bec77-6b71-40b5-8cb5-045d5953fb8f" ParentLink="ComplexStatement_Statement" LowerBound="201.1" HigherBound="209.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Const_uspPOStatusUpdReq" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageRef" OID="c2661d7e-0ee9-4d5e-a769-96c32f0b983f" ParentLink="Construct_MessageRef" LowerBound="202.35" HigherBound="202.52">
+                                <om:Property Name="Ref" Value="msgPOStatusUpdReq" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessageAssignment" OID="8817fe45-afda-4a8c-9303-9efe08013f5d" ParentLink="ComplexStatement_Statement" LowerBound="204.1" HigherBound="208.1">
+                                <om:Property Name="Expression" Value="varTempXML = new System.Xml.XmlDocument();&#xD;&#xA;varTempXML.LoadXml(&quot;&lt;ns0:InterfaceMOFPOStatusUpdate xmlns:ns0='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo'&gt;&lt;ns0:HubID&gt;Cumulus&lt;/ns0:HubID&gt;&lt;ns0:DocumentID&gt;&quot; + varDocId + &quot;&lt;/ns0:DocumentID&gt;&lt;ns0:DocumentStatus&gt;Success&lt;/ns0:DocumentStatus&gt;&lt;ns0:InterfaceStatus&gt;APISent&lt;/ns0:InterfaceStatus&gt;&lt;ns0:APIStatus&gt;&quot; + varAPIStatus + &quot;&lt;/ns0:APIStatus&gt;&lt;ns0:APIDate&gt;&quot; + varAPIDate + &quot;&lt;/ns0:APIDate&gt;&lt;ns0:APIMessage&gt;&quot; + varAPIErrorMessage + &quot;&lt;/ns0:APIMessage&gt;&lt;/ns0:InterfaceMOFPOStatusUpdate&gt;&quot;);&#xD;&#xA;msgPOStatusUpdReq = varTempXML;&#xD;&#xA;" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="MessageAssignment_4" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="9a9d0a39-69f1-4e03-83dc-e6b43d2aefa1" ParentLink="ComplexStatement_Statement" LowerBound="209.1" HigherBound="224.1">
+                            <om:Property Name="Expression" Value="&#xA;if(System.Convert.ToString(Sp.MOF.Common.SSOClientHelper.Read(&quot;Sp.MOF&quot;, &quot;ShowMOFAdminLogs&quot;)) == &quot;Yes&quot;)&#xA;{&#xA;    varTempXML = new System.Xml.XmlDocument();&#xA;    varTempXML = msgPOStatusUpdReq;&#xA;    if(varTempXML.OuterXml.Length &lt; 30000)&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;msgPOStatusUpdReq&quot;,varTempXML.OuterXml);&#xA;    }&#xA;    else&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;msgPOStatusUpdReq&quot;,varTempXML.OuterXml.Substring(1,29500));&#xA;    }&#xA;}" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ShowLogs" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Send" OID="d0d8e7db-9237-4a5f-abb7-c72f93d93762" ParentLink="ComplexStatement_Statement" LowerBound="224.1" HigherBound="226.1">
+                            <om:Property Name="PortName" Value="Port_SndRcvCumulusPOStatusUpdate" />
+                            <om:Property Name="MessageName" Value="msgPOStatusUpdReq" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send_1" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="Receive" OID="738c2937-cbc4-453f-be93-1605098def56" ParentLink="ComplexStatement_Statement" LowerBound="226.1" HigherBound="228.1">
+                            <om:Property Name="Activate" Value="False" />
+                            <om:Property Name="PortName" Value="Port_SndRcvCumulusPOStatusUpdate" />
+                            <om:Property Name="MessageName" Value="msgPOStatusUpdResp" />
+                            <om:Property Name="OperationName" Value="Operation_1" />
+                            <om:Property Name="OperationMessageName" Value="Response" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Receive_3" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                        <om:Element Type="VariableAssignment" OID="fb3240aa-51d1-4f7a-b333-f1de465bcc7a" ParentLink="ComplexStatement_Statement" LowerBound="228.1" HigherBound="243.1">
+                            <om:Property Name="Expression" Value="&#xA;if(System.Convert.ToString(Sp.MOF.Common.SSOClientHelper.Read(&quot;Sp.MOF&quot;, &quot;ShowMOFAdminLogs&quot;)) == &quot;Yes&quot;)&#xA;{&#xA;    varTempXML = new System.Xml.XmlDocument();&#xA;    varTempXML = msgPOStatusUpdResp;&#xA;    if(varTempXML.OuterXml.Length &lt; 30000)&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;msgPOStatusUpdResp&quot;,varTempXML.OuterXml);&#xA;    }&#xA;    else&#xA;    {&#xA;        System.Diagnostics.EventLog.WriteEntry(&quot;msgPOStatusUpdResp&quot;,varTempXML.OuterXml.Substring(1,29500));&#xA;    }&#xA;}" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="ShowLogs" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Catch" OID="25db2112-db4e-4496-ac57-cf062775940d" ParentLink="Scope_Catch" LowerBound="246.1" HigherBound="303.1">
+                            <om:Property Name="ExceptionName" Value="ex" />
+                            <om:Property Name="ExceptionType" Value="System.Exception" />
+                            <om:Property Name="IsFaultMessage" Value="False" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="System Exception" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="VariableAssignment" OID="a2fe53c9-083f-483d-abf0-3ffccb6ed40b" ParentLink="Catch_Statement" LowerBound="249.1" HigherBound="260.1">
+                                <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;CumulusPOUpdateException&quot;,ex.Message);&#xD;&#xA;varExceptionmsg = ex.Message;&#xD;&#xA;varExceptionmsg = varExceptionmsg.Replace(&quot;&amp;&quot;,&quot;&amp;amp;&quot;);&#xD;&#xA;varExceptionmsg = varExceptionmsg.Replace(&quot;'&quot;,&quot;''&quot;);&#xD;&#xA;varExceptionmsg = varExceptionmsg.Replace(&quot;&lt;&quot;,&quot;&amp;lt;&quot;);&#xD;&#xA;varExceptionmsg = varExceptionmsg.Replace(&quot;&gt;&quot;,&quot;&amp;gt;&quot;);&#xD;&#xA;if(varExceptionmsg.Length &gt; 1000)&#xD;&#xA;{&#xD;&#xA;    varExceptionmsg = varExceptionmsg.Substring(0,999);&#xD;&#xA;}" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="ExceptionMsg" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Construct" OID="4dac871b-2160-4581-a718-cf661f02e1de" ParentLink="Catch_Statement" LowerBound="260.1" HigherBound="270.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="const_ErrorLogsTable" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageRef" OID="c2b21271-fa5b-4698-a438-b05953a3689c" ParentLink="Construct_MessageRef" LowerBound="261.39" HigherBound="261.51">
+                                    <om:Property Name="Ref" Value="msgErrorLogs" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageAssignment" OID="a0c7fd5c-17af-488d-8ccd-c11e36d2b98a" ParentLink="ComplexStatement_Statement" LowerBound="263.1" HigherBound="269.1">
+                                    <om:Property Name="Expression" Value="varTempXML = new System.Xml.XmlDocument();&#xD;&#xA;varTempXML.LoadXml(&quot;&lt;ns0:InterfaceErrorLogs xmlns:ns0='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo'&gt;&lt;ns0:HubID&gt;MOFGeBiz&lt;/ns0:HubID&gt;&lt;ns0:DocumentID&gt;&quot; + varDocId + &quot;&lt;/ns0:DocumentID&gt;&lt;ns0:DocumentType&gt;GeBizPOXML&lt;/ns0:DocumentType&gt;&lt;ns0:DocumentNumber&gt;&quot; + varDocId + &quot;&lt;/ns0:DocumentNumber&gt;&lt;ns0:ModuleName&gt;Process_GeBizPO_DB_Peppol&lt;/ns0:ModuleName&gt;&lt;ns0:ExceptionType&gt;&quot; + ex.Source + &quot;&lt;/ns0:ExceptionType&gt;&lt;ns0:ErrorMessage&gt;&quot; + varExceptionmsg + &quot;&lt;/ns0:ErrorMessage&gt;&lt;ns0:VendorCode&gt;-&lt;/ns0:VendorCode&gt;&lt;ns0:DocumentPath&gt;-&lt;/ns0:DocumentPath&gt;&lt;/ns0:InterfaceErrorLogs&gt;&quot;);&#xD;&#xA;&#xD;&#xA;msgErrorLogs.Body = varTempXML;&#xD;&#xA;&#xD;&#xA;" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_3" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="e8e3c05f-c9f8-4260-998c-da052a145175" ParentLink="Catch_Statement" LowerBound="270.1" HigherBound="272.1">
+                                <om:Property Name="PortName" Value="Port_SndMOFErrorLogs" />
+                                <om:Property Name="MessageName" Value="msgErrorLogs" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_ErrorLogs" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="Construct" OID="a90cc7bc-9470-4ebd-b969-d4ccba6d1a1a" ParentLink="Catch_Statement" LowerBound="272.1" HigherBound="300.1">
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Const_ErrorEmail" />
+                                <om:Property Name="Signal" Value="True" />
+                                <om:Element Type="MessageAssignment" OID="d4cbfc01-0feb-4fec-9685-1c1e887cfdf7" ParentLink="ComplexStatement_Statement" LowerBound="275.1" HigherBound="299.1">
+                                    <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;MOFCumulusPOUpdException&quot;,ex.Message);&#xD;&#xA;&#xD;&#xA;varEmailBody = new System.Text.StringBuilder();&#xD;&#xA;varEmailBody.AppendLine(&quot;&lt;html&gt;&lt;body&gt;&quot;);&#xD;&#xA;varEmailBody.AppendLine(&quot;&lt;p&gt;MOF Cumulus PO failed while Updating in SESAMi.&lt;/p&gt;&quot;);&#xD;&#xA;varEmailBody.AppendLine(&quot;&lt;p&gt;&lt;b&gt;&lt;u&gt;Error details:&lt;/u&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&quot;);&#xD;&#xA;varEmailBody.AppendLine(&quot;&lt;b&gt;Application Name&lt;/b&gt; : &lt;i&gt;Sp.MOF&lt;/i&gt;&lt;br/&gt;&quot;);&#xD;&#xA;varEmailBody.AppendLine(&quot;&lt;b&gt;Process Name&lt;/b&gt; : &lt;i&gt;Process_CumulusPO_DB_Peppol&lt;/i&gt;&lt;br/&gt;&quot;);&#xD;&#xA;varEmailBody.AppendLine(&quot;&lt;b&gt;DocId&lt;/b&gt; : &lt;i&gt;&quot; + varDocId  + &quot;&lt;/i&gt;&lt;br/&gt;&quot;);&#xD;&#xA;varEmailBody.AppendLine(&quot;&lt;b&gt;Failure Code&lt;/b&gt; : &quot; + ex.Source + &quot;&lt;br/&gt;&quot;);&#xD;&#xA;varEmailBody.AppendLine(&quot;&lt;b&gt;Error Description&lt;/b&gt; : &lt;i&gt;&quot; + ex.Message + &quot;&lt;/i&gt;&lt;br/&gt;&quot;);&#xD;&#xA;varEmailBody.AppendLine(&quot;&lt;/body&gt;&lt;/html&gt;&quot;);&#xD;&#xA;msgErrorEmail.Body = new Sp.MOF.Common.RawString(varEmailBody.ToString());&#xD;&#xA;Sp.MOF.Common.SMTPUtils.SetContentType(msgErrorEmail.Body,&quot;text/html&quot;);&#xD;&#xA;Port_SndCumulusPODBToPeppolErrorEmail(Microsoft.XLANGs.BaseTypes.Address) = Sp.MOF.Common.SSOClientHelper.Read(&quot;Sp.MOF&quot;, &quot;SMTPTo&quot;);&#xD;&#xA;&#xD;&#xA;msgErrorEmail(SMTP.From) = Sp.MOF.Common.SSOClientHelper.Read(&quot;Sp.MOF&quot;, &quot;SMTPFrom&quot;);&#xD;&#xA;&#xD;&#xA;msgErrorEmail(SMTP.Subject) = &quot;MOFCumulusPO failed while updating status for DocId: &quot; + varDocId;&#xD;&#xA;&#xD;&#xA;msgErrorEmail(SMTP.EmailBodyFileCharset) = &quot;UTF-8&quot;;&#xD;&#xA;msgErrorEmail(SMTP.CC) = Sp.MOF.Common.SSOClientHelper.Read(&quot;Sp.MOF&quot;, &quot;SMTPCCopy&quot;);&#xD;&#xA;msgErrorEmail(SMTP.SMTPHost)= Sp.MOF.Common.SSOClientHelper.Read(&quot;Sp.MOF&quot;, &quot;SMTPHost&quot;);" />
+                                    <om:Property Name="ReportToAnalyst" Value="False" />
+                                    <om:Property Name="Name" Value="MessageAssignment_1" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                                <om:Element Type="MessageRef" OID="30d9ea9f-a586-4077-9d17-7eba0f739c77" ParentLink="Construct_MessageRef" LowerBound="273.39" HigherBound="273.52">
+                                    <om:Property Name="Ref" Value="msgErrorEmail" />
+                                    <om:Property Name="ReportToAnalyst" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
+                                </om:Element>
+                            </om:Element>
+                            <om:Element Type="Send" OID="724dad4d-9db7-4df1-854f-85c9af8e850d" ParentLink="Catch_Statement" LowerBound="300.1" HigherBound="302.1">
+                                <om:Property Name="PortName" Value="Port_SndCumulusPODBToPeppolErrorEmail" />
+                                <om:Property Name="MessageName" Value="msgErrorEmail" />
+                                <om:Property Name="OperationName" Value="Operation_1" />
+                                <om:Property Name="OperationMessageName" Value="Request" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="Send_3" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="Delay" OID="1b699d48-673e-4616-8a13-6df87b9fc31e" ParentLink="ComplexStatement_Statement" LowerBound="305.1" HigherBound="307.1">
+                        <om:Property Name="Timeout" Value="new System.TimeSpan(0,0,0,0,System.Convert.ToInt32(Sp.MOF.Common.SSOClientHelper.Read(&quot;Sp.MOF&quot;, &quot;MOFDelayinMS&quot;)));" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Delay_SSO" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="8b5de829-2a5d-40fa-8c35-c7b4fff57ed7" ParentLink="ServiceBody_Statement" LowerBound="308.1" HigherBound="310.1">
+                    <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;Cumulus POUpd Process End&quot;,&quot;Cumulus POUpd Process Completed&quot;);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Process_Complete" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="3acbbf1a-7c78-4301-a325-3785ad9ffaa5" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="35.1" HigherBound="37.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Sp.MOF.Orchestrations.PortType_RcvCumulusPODocIdsPoll" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_RcvCumulusPODocIdsPoll" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="0419cb66-3267-426e-b594-df149ddf17d6" ParentLink="PortDeclaration_CLRAttribute" LowerBound="35.1" HigherBound="36.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="ba681daa-8e63-4c77-a383-d06fc408f0b8" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="37.1" HigherBound="39.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="35" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Sp.MOF.Orchestrations.PortType_SndRcvCumulusPOData" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_SndRcvCumulusPOData" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="04c28979-89b2-42f7-a3f8-bad2ecc76e83" ParentLink="PortDeclaration_CLRAttribute" LowerBound="37.1" HigherBound="38.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="edd56e8e-80de-4568-bbb9-9a6a4112a653" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="39.1" HigherBound="41.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="87" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Sp.MOF.Orchestrations.PortType_SndRcvCumulusPOStatusUpdate" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_SndRcvCumulusPOStatusUpdate" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="bbb1cf4e-a997-48d5-9e96-cec63ba7d4b2" ParentLink="PortDeclaration_CLRAttribute" LowerBound="39.1" HigherBound="40.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="0d962a8b-ed07-4ce6-98c1-01b2956d24ea" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="41.1" HigherBound="43.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="120" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Sp.MOF.Orchestrations.PortType_SndMOFErrorLogs" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_SndMOFErrorLogs" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="29bae023-0caf-43be-ba1f-92e89fcd7214" ParentLink="PortDeclaration_CLRAttribute" LowerBound="41.1" HigherBound="42.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="82ea4cb5-3102-44e6-9fc9-2ee99d603bb2" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="43.1" HigherBound="45.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="Sp.MOF.Orchestrations.PortType_SndCumulusPODBToPeppolErrorEmail" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Port_SndCumulusPODBToPeppolErrorEmail" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="PhysicalBindingAttribute" OID="c438d3fa-a716-4fdf-af92-66f82c00eedf" ParentLink="PortDeclaration_CLRAttribute" LowerBound="43.1" HigherBound="44.1">
+                    <om:Property Name="InPipeline" Value="Microsoft.BizTalk.DefaultPipelines.XMLReceive" />
+                    <om:Property Name="OutPipeline" Value="Microsoft.BizTalk.DefaultPipelines.PassThruTransmit" />
+                    <om:Property Name="TransportType" Value="HTTP" />
+                    <om:Property Name="URI" Value="http://tempURI" />
+                    <om:Property Name="IsDynamic" Value="True" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Sp.MOF.Orchestrations
+{
+    internal porttype PortType_RcvCumulusPODocIdsPoll
+    {
+        oneway Operation_1
+        {
+            Sp.MOF.Schemas.uspPollCumulusPODocIds_TypedPolling_InterfacePODocIdsCumulus.TypedPolling
+        };
+    };
+    internal porttype PortType_SndRcvCumulusPOData
+    {
+        requestresponse Operation_1
+        {
+            Sp.MOF.Schemas.uspPOData_TypedProcedure_dbo.InterfaceMOFPOData, Sp.MOF.Schemas.uspPOData_TypedProcedure_dbo.InterfaceMOFPODataResponse
+        };
+    };
+    internal porttype PortType_SndRcvCumulusPOStatusUpdate
+    {
+        requestresponse Operation_1
+        {
+            Sp.MOF.Schemas.uspPOUpdate_TypedProcedure_dbo.InterfaceMOFPOStatusUpdate, Sp.MOF.Schemas.uspPOUpdate_TypedProcedure_dbo.InterfaceMOFPOStatusUpdateResponse
+        };
+    };
+    internal porttype PortType_SndCumulusPODBToPeppolErrorEmail
+    {
+        oneway Operation_1
+        {
+            msgMultiErrorEmail
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service Process_CumulusPO_DB_Peppol
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_RcvCumulusPODocIdsPoll Port_RcvCumulusPODocIdsPoll;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_SndRcvCumulusPOData Port_SndRcvCumulusPOData;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_SndRcvCumulusPOStatusUpdate Port_SndRcvCumulusPOStatusUpdate;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_SndMOFErrorLogs Port_SndMOFErrorLogs;
+        [Microsoft.XLANGs.BaseTypes.PhysicalBinding(typeof(Microsoft.BizTalk.DefaultPipelines.PassThruTransmit))]
+        port uses dynamic PortType_SndCumulusPODBToPeppolErrorEmail Port_SndCumulusPODBToPeppolErrorEmail;
+        message Sp.MOF.Schemas.uspPOData_TypedProcedure_dbo.InterfaceMOFPODataResponse msguspPOResp;
+        message Sp.MOF.Schemas.uspPOData_TypedProcedure_dbo.InterfaceMOFPOData msguspPOReq;
+        message Sp.MOF.Schemas.uspPollCumulusPODocIds_TypedPolling_InterfacePODocIdsCumulus.TypedPollingResultSet0 msgSingleDocId;
+        message Sp.MOF.Schemas.uspPOUpdate_TypedProcedure_dbo.InterfaceMOFPOStatusUpdateResponse msgPOStatusUpdResp;
+        message Sp.MOF.Schemas.uspPOUpdate_TypedProcedure_dbo.InterfaceMOFPOStatusUpdate msgPOStatusUpdReq;
+        message Sp.MOF.Schemas.PeppolPOMOF msgPeppolPOXML;
+        message Sp.MOF.Schemas.PeppolAPIResponse msgPeppolAPIResp;
+        message msgMultiErrorLogs msgErrorLogs;
+        message msgMultiErrorEmail msgErrorEmail;
+        message Sp.MOF.Schemas.uspPollCumulusPODocIds_TypedPolling_InterfacePODocIdsCumulus.TypedPolling msgPollDocIds;
+        System.Xml.XmlDocument varTempXML;
+        Sp.MOF.CallPeppolAPI.PostPeppolXMLData varobjPeppolAPI;
+        System.String varLoopItem;
+        System.Int32 varLoopCounter;
+        System.String varExceptionmsg;
+        System.Text.StringBuilder varEmailBody;
+        System.String varDocId;
+        System.Int32 varDocCount;
+        System.String varAPIStatus;
+        System.String varAPIResp;
+        System.String varAPIErrorMessage;
+        System.String varAPIDate;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("325bbc6e-b6a9-4e10-bc12-2a02ecd279cc")]
+            activate receive (Port_RcvCumulusPODocIdsPoll.Operation_1, msgPollDocIds);
+            varTempXML = new System.Xml.XmlDocument();
+            varobjPeppolAPI = new Sp.MOF.CallPeppolAPI.PostPeppolXMLData();
+            varLoopItem = "";
+            varLoopCounter = 0;
+            varExceptionmsg = "";
+            varEmailBody = new System.Text.StringBuilder();
+            varDocId = "";
+            varDocCount = 0;
+            varAPIStatus = "";
+            varAPIResp = "";
+            varAPIErrorMessage = "";
+            varAPIDate = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("becf2faf-663a-438d-b3fd-439ce10f6bf4")]
+            System.Diagnostics.EventLog.WriteEntry("Cumulus DB_Peppol Process Start","Cumulus DB_Peppol Process Started");
+            varDocCount = xpath(msgPollDocIds,"count(/*[local-name()='TypedPolling' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePODocIdsCumulus']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePODocIdsCumulus']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePODocIdsCumulus']/*[local-name()='DocumentID' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePODocIdsCumulus'])");
+            System.Diagnostics.EventLog.WriteEntry("Cumulus Doc Count",varDocCount.ToString());
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("29f86527-2e4e-433f-b7e9-3c96037e231f")]
+            while (varLoopCounter < varDocCount)
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("795d26a5-6272-4983-a8fd-9c4cceb062d7")]
+                scope
+                {
+                    body
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("27b3d5fe-84db-430d-b13a-d6bdb53d3637")]
+                        varLoopCounter = varLoopCounter + 1;
+                        varLoopItem = varLoopCounter.ToString();
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("6e09ccbc-2bfa-4076-9343-8522d5b2cd9f")]
+                        construct msgSingleDocId
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("0425b52b-29ef-4a87-af46-8255d353e60f")]
+                            msgSingleDocId = xpath(msgPollDocIds, "/*[local-name()='TypedPolling' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePODocIdsCumulus']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePODocIdsCumulus']/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePODocIdsCumulus']["+ varLoopItem +"]" );
+                            varDocId = msgSingleDocId.DocumentID;
+                            
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("f1a8605b-07fb-41f1-99fa-37f1b4e4eec1")]
+                        construct msguspPOReq
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("99c4d1af-68dc-4429-8b61-13bc680fc90e")]
+                            varTempXML = new System.Xml.XmlDocument();
+                            varTempXML.LoadXml("<ns0:InterfaceMOFPOData xmlns:ns0='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo'><ns0:DocumentID>" + varDocId + "</ns0:DocumentID><ns0:HubID>Cumulus</ns0:HubID></ns0:InterfaceMOFPOData>");
+                            msguspPOReq = varTempXML;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("76c65b24-c70e-4a99-b5f0-86d4b3acab68")]
+                        
+                        if(System.Convert.ToString(Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "ShowMOFAdminLogs")) == "Yes")
+                        {
+                            varTempXML = new System.Xml.XmlDocument();
+                            varTempXML = msguspPOReq;
+                            if(varTempXML.OuterXml.Length < 30000)
+                            {
+                                System.Diagnostics.EventLog.WriteEntry("msguspPOReq",varTempXML.OuterXml);
+                            }
+                            else
+                            {
+                                System.Diagnostics.EventLog.WriteEntry("msguspPOReq",varTempXML.OuterXml.Substring(1,29500));
+                            }
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("bd0596b7-83f0-49a4-b37f-0a42bf9cd2e6")]
+                        send (Port_SndRcvCumulusPOData.Operation_1, msguspPOReq);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("0383e68b-b602-481e-b36f-fd3e29024ea7")]
+                        receive (Port_SndRcvCumulusPOData.Operation_1, msguspPOResp);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("dfe6bf08-8d14-4a41-9feb-a2eb0b527d5c")]
+                        construct msgPeppolPOXML
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e0b095c3-8183-4bc2-896d-b3bfdafbe27f")]
+                            transform (msgPeppolPOXML) = Sp.MOF.Transforms.Map_DBPO_PeppolPO (msguspPOResp);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("284b947a-5d01-4bff-bd84-e60ed1be4582")]
+                        
+                        if(System.Convert.ToString(Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "ShowMOFAdminLogs")) == "Yes")
+                        {
+                            varTempXML = new System.Xml.XmlDocument();
+                            varTempXML = msguspPOResp;
+                            if(varTempXML.OuterXml.Length < 30000)
+                            {
+                                System.Diagnostics.EventLog.WriteEntry("msguspPOResp",varTempXML.OuterXml);
+                            }
+                            else
+                            {
+                                System.Diagnostics.EventLog.WriteEntry("msguspPOResp",varTempXML.OuterXml.Substring(1,29500));
+                            }
+                            varTempXML = new System.Xml.XmlDocument();
+                            varTempXML = msgPeppolPOXML;
+                            if(varTempXML.OuterXml.Length < 30000)
+                            {
+                                System.Diagnostics.EventLog.WriteEntry("msgPeppolPOXML",varTempXML.OuterXml);
+                            }
+                            else
+                            {
+                                System.Diagnostics.EventLog.WriteEntry("msgPeppolPOXML",varTempXML.OuterXml.Substring(1,29500));
+                            }
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("8fd1ddb3-9f17-4b02-a429-d99c2ed826ad")]
+                        varTempXML=msgPeppolPOXML;
+                        varAPIResp = varobjPeppolAPI.PostResponseData(varTempXML.OuterXml,"");
+                        if(System.Convert.ToString(Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "ShowMOFAdminLogs")) == "Yes")
+                        {
+                            if(varAPIResp.Length < 30000)
+                            {
+                                System.Diagnostics.EventLog.WriteEntry("APIResp",varAPIResp);
+                            }
+                            else
+                            {
+                                System.Diagnostics.EventLog.WriteEntry("APIResp",varAPIResp.Substring(1,29500));
+                            }
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("79bd6a70-d9dd-4461-ac29-0a17d8cf3053")]
+                        construct msgPeppolAPIResp
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3a04b133-59c0-4e4d-b8e2-e2b9939b97dc")]
+                            varTempXML = new System.Xml.XmlDocument();
+                            varTempXML.LoadXml(varAPIResp);
+                            msgPeppolAPIResp = varTempXML;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("be4db3ce-1021-43fa-aaf3-1e92451da722")]
+                        if(System.String.IsNullOrEmpty(msgPeppolAPIResp.Timestamp))
+                        {
+                            varAPIDate = System.DateTime.Now.ToString();
+                        }
+                        if(msgPeppolAPIResp.Succeed == false)
+                        {
+                            varAPIStatus = "Failed";
+                            varAPIErrorMessage = msgPeppolAPIResp.ErrorDescription;
+                        }
+                        else
+                        {
+                            varAPIStatus = "Success";
+                            varAPIErrorMessage = msgPeppolAPIResp.InvoiceSubmissionID;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("982bec77-6b71-40b5-8cb5-045d5953fb8f")]
+                        construct msgPOStatusUpdReq
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8817fe45-afda-4a8c-9303-9efe08013f5d")]
+                            varTempXML = new System.Xml.XmlDocument();
+                            varTempXML.LoadXml("<ns0:InterfaceMOFPOStatusUpdate xmlns:ns0='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo'><ns0:HubID>Cumulus</ns0:HubID><ns0:DocumentID>" + varDocId + "</ns0:DocumentID><ns0:DocumentStatus>Success</ns0:DocumentStatus><ns0:InterfaceStatus>APISent</ns0:InterfaceStatus><ns0:APIStatus>" + varAPIStatus + "</ns0:APIStatus><ns0:APIDate>" + varAPIDate + "</ns0:APIDate><ns0:APIMessage>" + varAPIErrorMessage + "</ns0:APIMessage></ns0:InterfaceMOFPOStatusUpdate>");
+                            msgPOStatusUpdReq = varTempXML;
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("9a9d0a39-69f1-4e03-83dc-e6b43d2aefa1")]
+                        
+                        if(System.Convert.ToString(Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "ShowMOFAdminLogs")) == "Yes")
+                        {
+                            varTempXML = new System.Xml.XmlDocument();
+                            varTempXML = msgPOStatusUpdReq;
+                            if(varTempXML.OuterXml.Length < 30000)
+                            {
+                                System.Diagnostics.EventLog.WriteEntry("msgPOStatusUpdReq",varTempXML.OuterXml);
+                            }
+                            else
+                            {
+                                System.Diagnostics.EventLog.WriteEntry("msgPOStatusUpdReq",varTempXML.OuterXml.Substring(1,29500));
+                            }
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("d0d8e7db-9237-4a5f-abb7-c72f93d93762")]
+                        send (Port_SndRcvCumulusPOStatusUpdate.Operation_1, msgPOStatusUpdReq);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("738c2937-cbc4-453f-be93-1605098def56")]
+                        receive (Port_SndRcvCumulusPOStatusUpdate.Operation_1, msgPOStatusUpdResp);
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("fb3240aa-51d1-4f7a-b333-f1de465bcc7a")]
+                        
+                        if(System.Convert.ToString(Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "ShowMOFAdminLogs")) == "Yes")
+                        {
+                            varTempXML = new System.Xml.XmlDocument();
+                            varTempXML = msgPOStatusUpdResp;
+                            if(varTempXML.OuterXml.Length < 30000)
+                            {
+                                System.Diagnostics.EventLog.WriteEntry("msgPOStatusUpdResp",varTempXML.OuterXml);
+                            }
+                            else
+                            {
+                                System.Diagnostics.EventLog.WriteEntry("msgPOStatusUpdResp",varTempXML.OuterXml.Substring(1,29500));
+                            }
+                        }
+                    }
+                    exceptions
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("25db2112-db4e-4496-ac57-cf062775940d")]
+                        catch (System.Exception ex)
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a2fe53c9-083f-483d-abf0-3ffccb6ed40b")]
+                            System.Diagnostics.EventLog.WriteEntry("CumulusPOUpdateException",ex.Message);
+                            varExceptionmsg = ex.Message;
+                            varExceptionmsg = varExceptionmsg.Replace("&","&amp;");
+                            varExceptionmsg = varExceptionmsg.Replace("'","''");
+                            varExceptionmsg = varExceptionmsg.Replace("<","&lt;");
+                            varExceptionmsg = varExceptionmsg.Replace(">","&gt;");
+                            if(varExceptionmsg.Length > 1000)
+                            {
+                                varExceptionmsg = varExceptionmsg.Substring(0,999);
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4dac871b-2160-4581-a718-cf661f02e1de")]
+                            construct msgErrorLogs
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("a0c7fd5c-17af-488d-8ccd-c11e36d2b98a")]
+                                varTempXML = new System.Xml.XmlDocument();
+                                varTempXML.LoadXml("<ns0:InterfaceErrorLogs xmlns:ns0='http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo'><ns0:HubID>MOFGeBiz</ns0:HubID><ns0:DocumentID>" + varDocId + "</ns0:DocumentID><ns0:DocumentType>GeBizPOXML</ns0:DocumentType><ns0:DocumentNumber>" + varDocId + "</ns0:DocumentNumber><ns0:ModuleName>Process_GeBizPO_DB_Peppol</ns0:ModuleName><ns0:ExceptionType>" + ex.Source + "</ns0:ExceptionType><ns0:ErrorMessage>" + varExceptionmsg + "</ns0:ErrorMessage><ns0:VendorCode>-</ns0:VendorCode><ns0:DocumentPath>-</ns0:DocumentPath></ns0:InterfaceErrorLogs>");
+                                
+                                msgErrorLogs.Body = varTempXML;
+                                
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("e8e3c05f-c9f8-4260-998c-da052a145175")]
+                            send (Port_SndMOFErrorLogs.Operation_1, msgErrorLogs);
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a90cc7bc-9470-4ebd-b969-d4ccba6d1a1a")]
+                            construct msgErrorEmail
+                            {
+                                [Microsoft.XLANGs.BaseTypes.DesignerPosition("d4cbfc01-0feb-4fec-9685-1c1e887cfdf7")]
+                                System.Diagnostics.EventLog.WriteEntry("MOFCumulusPOUpdException",ex.Message);
+                                
+                                varEmailBody = new System.Text.StringBuilder();
+                                varEmailBody.AppendLine("<html><body>");
+                                varEmailBody.AppendLine("<p>MOF Cumulus PO failed while Updating in SESAMi.</p>");
+                                varEmailBody.AppendLine("<p><b><u>Error details:</u></b></p><p>");
+                                varEmailBody.AppendLine("<b>Application Name</b> : <i>Sp.MOF</i><br/>");
+                                varEmailBody.AppendLine("<b>Process Name</b> : <i>Process_CumulusPO_DB_Peppol</i><br/>");
+                                varEmailBody.AppendLine("<b>DocId</b> : <i>" + varDocId  + "</i><br/>");
+                                varEmailBody.AppendLine("<b>Failure Code</b> : " + ex.Source + "<br/>");
+                                varEmailBody.AppendLine("<b>Error Description</b> : <i>" + ex.Message + "</i><br/>");
+                                varEmailBody.AppendLine("</body></html>");
+                                msgErrorEmail.Body = new Sp.MOF.Common.RawString(varEmailBody.ToString());
+                                Sp.MOF.Common.SMTPUtils.SetContentType(msgErrorEmail.Body,"text/html");
+                                Port_SndCumulusPODBToPeppolErrorEmail(Microsoft.XLANGs.BaseTypes.Address) = Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "SMTPTo");
+                                
+                                msgErrorEmail(SMTP.From) = Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "SMTPFrom");
+                                
+                                msgErrorEmail(SMTP.Subject) = "MOFCumulusPO failed while updating status for DocId: " + varDocId;
+                                
+                                msgErrorEmail(SMTP.EmailBodyFileCharset) = "UTF-8";
+                                msgErrorEmail(SMTP.CC) = Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "SMTPCCopy");
+                                msgErrorEmail(SMTP.SMTPHost)= Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "SMTPHost");
+                            }
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("724dad4d-9db7-4df1-854f-85c9af8e850d")]
+                            send (Port_SndCumulusPODBToPeppolErrorEmail.Operation_1, msgErrorEmail);
+                        }
+                    }
+                }
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("1b699d48-673e-4616-8a13-6df87b9fc31e")]
+                delay new System.TimeSpan(0,0,0,0,System.Convert.ToInt32(Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "MOFDelayinMS")));
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("8b5de829-2a5d-40fa-8c35-c7b4fff57ed7")]
+            System.Diagnostics.EventLog.WriteEntry("Cumulus POUpd Process End","Cumulus POUpd Process Completed");
+        }
+    }
+}
+

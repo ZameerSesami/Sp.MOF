@@ -20,9 +20,9 @@ namespace Sp.MOF.Schemas {
   <xs:import schemaLocation=""Sp.MOF.Schemas.PeppolPOMOF1"" namespace=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" />
   <xs:annotation>
     <xs:appinfo>
-      <references xmlns=""http://schemas.microsoft.com/BizTalk/2003"">
-        <reference targetNamespace=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" />
-      </references>
+      <b:references>
+        <b:reference targetNamespace=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" />
+      </b:references>
     </xs:appinfo>
   </xs:annotation>
   <xs:element name=""ValidityPeriod"">

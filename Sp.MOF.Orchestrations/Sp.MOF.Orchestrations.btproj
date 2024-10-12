@@ -83,6 +83,10 @@
     </XLang>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Sp.MOF.CallPeppolAPI\Sp.MOF.CallPeppolAPI.csproj">
+      <Project>{b770d8ea-771f-44b5-8f9d-57eb377a706b}</Project>
+      <Name>Sp.MOF.CallPeppolAPI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Sp.MOF.Common\Sp.MOF.Common.csproj">
       <Project>{c01503d3-dfac-4580-9b53-09f93c021239}</Project>
       <Name>Sp.MOF.Common</Name>
@@ -99,6 +103,20 @@
   <ItemGroup>
     <XLang Include="Process_CumulusPOXML_InsertDB.odx">
       <TypeName>Process_CumulusPOXML_InsertDB</TypeName>
+      <Namespace>Sp.MOF.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_GeBizPO_DB_Peppol.odx">
+      <TypeName>Process_GeBizPO_DB_Peppol</TypeName>
+      <Namespace>Sp.MOF.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_CumulusPO_DB_Peppol.odx">
+      <TypeName>Process_CumulusPO_DB_Peppol</TypeName>
       <Namespace>Sp.MOF.Orchestrations</Namespace>
       <SubType>Task</SubType>
     </XLang>

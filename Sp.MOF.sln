@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sp.MOF.Pipelines", "Sp.MOF.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sp.MOF.ArchiveMessage", "Sp.MOF.ArchiveMessage\Sp.MOF.ArchiveMessage.csproj", "{65A9CEE0-E01E-413E-96A2-93E5F33256E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sp.MOF.CallPeppolAPI", "Sp.MOF.CallPeppolAPI\Sp.MOF.CallPeppolAPI.csproj", "{B770D8EA-771F-44B5-8F9D-57EB377A706B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{65A9CEE0-E01E-413E-96A2-93E5F33256E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65A9CEE0-E01E-413E-96A2-93E5F33256E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65A9CEE0-E01E-413E-96A2-93E5F33256E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B770D8EA-771F-44B5-8F9D-57EB377A706B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B770D8EA-771F-44B5-8F9D-57EB377A706B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B770D8EA-771F-44B5-8F9D-57EB377A706B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B770D8EA-771F-44B5-8F9D-57EB377A706B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

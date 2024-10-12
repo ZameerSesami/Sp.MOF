@@ -95,6 +95,12 @@
       <SubType>Task</SubType>
     </Map>
     <Content Include="Map_CumulusPOXML_DB.xsl" />
+    <Map Include="Map_DBPO_PeppolPO.btm">
+      <TypeName>Map_DBPO_PeppolPO</TypeName>
+      <Namespace>Sp.MOF.Transforms</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Content Include="Map_DBPO_PeppolPO.xsl" />
     <Content Include="Map_PeppolGeBizXML_DB.xsl" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

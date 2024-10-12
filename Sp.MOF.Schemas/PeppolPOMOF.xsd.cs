@@ -18,15 +18,15 @@ namespace Sp.MOF.Schemas {
         
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
-<xs:schema xmlns:cbc=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" xmlns:cac=""urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" attributeFormDefault=""unqualified"" elementFormDefault=""qualified"" targetNamespace=""urn:oasis:names:specification:ubl:schema:xsd:Order-2"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
+<xs:schema xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:cac=""urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"" xmlns:cbc=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" attributeFormDefault=""unqualified"" elementFormDefault=""qualified"" targetNamespace=""urn:oasis:names:specification:ubl:schema:xsd:Order-2"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
   <xs:import schemaLocation=""Sp.MOF.Schemas.PeppolPOMOF1"" namespace=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" />
   <xs:import schemaLocation=""Sp.MOF.Schemas.PeppolPOMOF2"" namespace=""urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"" />
   <xs:annotation>
     <xs:appinfo>
-      <references xmlns=""http://schemas.microsoft.com/BizTalk/2003"">
-        <reference targetNamespace=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" />
-        <reference targetNamespace=""urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"" />
-      </references>
+      <b:references>
+        <b:reference targetNamespace=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" />
+        <b:reference targetNamespace=""urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"" />
+      </b:references>
     </xs:appinfo>
   </xs:annotation>
   <xs:element name=""Order"">
@@ -52,6 +52,13 @@ namespace Sp.MOF.Schemas {
         <xs:element ref=""cac:AccountingCustomerParty"" />
         <xs:element ref=""cac:Delivery"" />
         <xs:element ref=""cac:DeliveryTerms"" />
+        <xs:element name=""PaymentTerms"">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name=""Note"" type=""xs:string"" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
         <xs:element maxOccurs=""unbounded"" ref=""cac:AllowanceCharge"" />
         <xs:element ref=""cac:TaxTotal"" />
         <xs:element ref=""cac:AnticipatedMonetaryTotal"" />

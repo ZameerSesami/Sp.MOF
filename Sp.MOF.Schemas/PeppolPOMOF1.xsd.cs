@@ -7,8 +7,8 @@ namespace Sp.MOF.Schemas {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [SchemaType(SchemaTypeEnum.Document)]
     [System.SerializableAttribute()]
-    [SchemaRoots(new string[] {@"CustomizationID", @"ProfileID", @"ID", @"IssueDate", @"IssueTime", @"Note", @"DocumentCurrencyCode", @"AccountingCost", @"EndDate", @"DocumentType", @"URI", @"EndpointID", @"Name", @"StreetName", @"AdditionalStreetName", @"CityName", @"PostalZone", @"CountrySubentity", @"IdentificationCode", @"CompanyID", @"RegistrationName", @"Telephone", @"ElectronicMail", @"Line", @"StartDate", @"SpecialTerms", @"ChargeIndicator", @"AllowanceChargeReason", @"Amount", @"TaxAmount", 
-@"LineExtensionAmount", @"TaxExclusiveAmount", @"TaxInclusiveAmount", @"AllowanceTotalAmount", @"ChargeTotalAmount", @"PayableRoundingAmount", @"PayableAmount", @"Quantity", @"PartialDeliveryIndicator", @"PriceAmount", @"BaseQuantity", @"BaseAmount", @"Description", @"Percent", @"Value", @"ItemClassificationCode"})]
+    [SchemaRoots(new string[] {@"CustomizationID", @"ProfileID", @"ID", @"IssueDate", @"IssueTime", @"OrderTypeCode", @"Note", @"DocumentCurrencyCode", @"AccountingCost", @"EndDate", @"DocumentType", @"URI", @"EndpointID", @"Name", @"StreetName", @"AdditionalStreetName", @"CityName", @"PostalZone", @"CountrySubentity", @"IdentificationCode", @"CompanyID", @"RegistrationName", @"Telephone", @"ElectronicMail", @"Line", @"StartDate", @"SpecialTerms", @"ChargeIndicator", @"AllowanceChargeReason", @"Amount", 
+@"TaxAmount", @"LineExtensionAmount", @"TaxExclusiveAmount", @"TaxInclusiveAmount", @"AllowanceTotalAmount", @"ChargeTotalAmount", @"PayableRoundingAmount", @"PayableAmount", @"Quantity", @"PartialDeliveryIndicator", @"PriceAmount", @"BaseQuantity", @"BaseAmount", @"Description", @"Percent", @"Value", @"ItemClassificationCode"})]
     public sealed class PeppolPOMOF1 : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
@@ -30,6 +30,7 @@ namespace Sp.MOF.Schemas {
   </xs:element>
   <xs:element name=""IssueDate"" type=""xs:date"" />
   <xs:element name=""IssueTime"" type=""xs:time"" />
+  <xs:element name=""OrderTypeCode"" type=""xs:string"" />
   <xs:element name=""Note"" type=""xs:string"" />
   <xs:element name=""DocumentCurrencyCode"">
     <xs:complexType>
@@ -230,53 +231,54 @@ namespace Sp.MOF.Schemas {
         
         public override string[] RootNodes {
             get {
-                string[] _RootElements = new string [46];
+                string[] _RootElements = new string [47];
                 _RootElements[0] = "CustomizationID";
                 _RootElements[1] = "ProfileID";
                 _RootElements[2] = "ID";
                 _RootElements[3] = "IssueDate";
                 _RootElements[4] = "IssueTime";
-                _RootElements[5] = "Note";
-                _RootElements[6] = "DocumentCurrencyCode";
-                _RootElements[7] = "AccountingCost";
-                _RootElements[8] = "EndDate";
-                _RootElements[9] = "DocumentType";
-                _RootElements[10] = "URI";
-                _RootElements[11] = "EndpointID";
-                _RootElements[12] = "Name";
-                _RootElements[13] = "StreetName";
-                _RootElements[14] = "AdditionalStreetName";
-                _RootElements[15] = "CityName";
-                _RootElements[16] = "PostalZone";
-                _RootElements[17] = "CountrySubentity";
-                _RootElements[18] = "IdentificationCode";
-                _RootElements[19] = "CompanyID";
-                _RootElements[20] = "RegistrationName";
-                _RootElements[21] = "Telephone";
-                _RootElements[22] = "ElectronicMail";
-                _RootElements[23] = "Line";
-                _RootElements[24] = "StartDate";
-                _RootElements[25] = "SpecialTerms";
-                _RootElements[26] = "ChargeIndicator";
-                _RootElements[27] = "AllowanceChargeReason";
-                _RootElements[28] = "Amount";
-                _RootElements[29] = "TaxAmount";
-                _RootElements[30] = "LineExtensionAmount";
-                _RootElements[31] = "TaxExclusiveAmount";
-                _RootElements[32] = "TaxInclusiveAmount";
-                _RootElements[33] = "AllowanceTotalAmount";
-                _RootElements[34] = "ChargeTotalAmount";
-                _RootElements[35] = "PayableRoundingAmount";
-                _RootElements[36] = "PayableAmount";
-                _RootElements[37] = "Quantity";
-                _RootElements[38] = "PartialDeliveryIndicator";
-                _RootElements[39] = "PriceAmount";
-                _RootElements[40] = "BaseQuantity";
-                _RootElements[41] = "BaseAmount";
-                _RootElements[42] = "Description";
-                _RootElements[43] = "Percent";
-                _RootElements[44] = "Value";
-                _RootElements[45] = "ItemClassificationCode";
+                _RootElements[5] = "OrderTypeCode";
+                _RootElements[6] = "Note";
+                _RootElements[7] = "DocumentCurrencyCode";
+                _RootElements[8] = "AccountingCost";
+                _RootElements[9] = "EndDate";
+                _RootElements[10] = "DocumentType";
+                _RootElements[11] = "URI";
+                _RootElements[12] = "EndpointID";
+                _RootElements[13] = "Name";
+                _RootElements[14] = "StreetName";
+                _RootElements[15] = "AdditionalStreetName";
+                _RootElements[16] = "CityName";
+                _RootElements[17] = "PostalZone";
+                _RootElements[18] = "CountrySubentity";
+                _RootElements[19] = "IdentificationCode";
+                _RootElements[20] = "CompanyID";
+                _RootElements[21] = "RegistrationName";
+                _RootElements[22] = "Telephone";
+                _RootElements[23] = "ElectronicMail";
+                _RootElements[24] = "Line";
+                _RootElements[25] = "StartDate";
+                _RootElements[26] = "SpecialTerms";
+                _RootElements[27] = "ChargeIndicator";
+                _RootElements[28] = "AllowanceChargeReason";
+                _RootElements[29] = "Amount";
+                _RootElements[30] = "TaxAmount";
+                _RootElements[31] = "LineExtensionAmount";
+                _RootElements[32] = "TaxExclusiveAmount";
+                _RootElements[33] = "TaxInclusiveAmount";
+                _RootElements[34] = "AllowanceTotalAmount";
+                _RootElements[35] = "ChargeTotalAmount";
+                _RootElements[36] = "PayableRoundingAmount";
+                _RootElements[37] = "PayableAmount";
+                _RootElements[38] = "Quantity";
+                _RootElements[39] = "PartialDeliveryIndicator";
+                _RootElements[40] = "PriceAmount";
+                _RootElements[41] = "BaseQuantity";
+                _RootElements[42] = "BaseAmount";
+                _RootElements[43] = "Description";
+                _RootElements[44] = "Percent";
+                _RootElements[45] = "Value";
+                _RootElements[46] = "ItemClassificationCode";
                 return _RootElements;
             }
         }
@@ -451,6 +453,41 @@ namespace Sp.MOF.Schemas {
                 get {
                     string[] _RootElements = new string [1];
                     _RootElements[0] = "IssueTime";
+                    return _RootElements;
+                }
+            }
+            
+            protected override object RawSchema {
+                get {
+                    return _rawSchema;
+                }
+                set {
+                    _rawSchema = value;
+                }
+            }
+        }
+        
+        [Schema(@"urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2",@"OrderTypeCode")]
+        [System.SerializableAttribute()]
+        [SchemaRoots(new string[] {@"OrderTypeCode"})]
+        public sealed class OrderTypeCode : Microsoft.XLANGs.BaseTypes.SchemaBase {
+            
+            [System.NonSerializedAttribute()]
+            private static object _rawSchema;
+            
+            public OrderTypeCode() {
+            }
+            
+            public override string XmlContent {
+                get {
+                    return _strSchema;
+                }
+            }
+            
+            public override string[] RootNodes {
+                get {
+                    string[] _RootElements = new string [1];
+                    _RootElements[0] = "OrderTypeCode";
                     return _RootElements;
                 }
             }
