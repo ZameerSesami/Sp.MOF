@@ -76,7 +76,7 @@
     <None Include="signingmofkey.snk" />
   </ItemGroup>
   <ItemGroup>
-    <XLang Include="Process_GeBizPOXML_InsertDB.odx">
+    <XLang Include="Process_GeBizPOFF_InsertDB.odx">
       <TypeName>Process_GeBizXML_InsertDB</TypeName>
       <Namespace>Sp.MOF.Orchestrations</Namespace>
       <SubType>Task</SubType>
@@ -101,7 +101,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <XLang Include="Process_CumulusPOXML_InsertDB.odx">
+    <XLang Include="Process_CumulusPOFF_InsertDB.odx">
       <TypeName>Process_CumulusPOXML_InsertDB</TypeName>
       <Namespace>Sp.MOF.Orchestrations</Namespace>
       <SubType>Task</SubType>
@@ -120,6 +120,46 @@
       <Namespace>Sp.MOF.Orchestrations</Namespace>
       <SubType>Task</SubType>
     </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_PeppolDBStatusGeBiz.odx">
+      <TypeName>Process_PeppolDBStatusGeBiz</TypeName>
+      <Namespace>Sp.MOF.Orchestrations</Namespace>
+      <SubType>Designer</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_PeppolDBStatusCumulus.odx">
+      <TypeName>Process_PeppolDBStatusCumulus</TypeName>
+      <Namespace>Sp.MOF.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Map_CumulusPOXML_DB.xsl" />
+    <Map Include="Map_GeBizPOXML_DB.btm">
+      <TypeName>Map_GeBizPOXML_DB</TypeName>
+      <Namespace>Sp.MOF.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="Map_DBResp_PeppolPOXMLGebiz.btm">
+      <TypeName>Map_DBResp_PeppolPOXMLGebiz</TypeName>
+      <Namespace>Sp.MOF.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="Map_DBResp_PeppolPOXMLCumulus.btm">
+      <TypeName>Map_DBResp_PeppolPOXMLCumulus</TypeName>
+      <Namespace>Sp.MOF.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Content Include="Map_DBResp_PeppolPOXMLCumulus.xsl" />
+    <Content Include="Map_DBResp_PeppolPOXMLGebiz.xsl" />
+    <Content Include="Map_GeBizPOXML_DB.xsl" />
+    <Map Include="Map_CumulusPOXML_DB.btm">
+      <TypeName>Map_CumulusPOXML_DB</TypeName>
+      <Namespace>Sp.MOF.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </Map>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />

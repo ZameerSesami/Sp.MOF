@@ -13,6 +13,7 @@ namespace Sp.MOF.CallPeppolAPI
         public bool Succeed { get; set; }
         public string ErrorDescription { get; set; } = null;
         public string InvoiceSubmissionID { get; set; } = null;
+        public string POSubmissionID { get; set; } = null;
     }
     public class ItemErrorList
     {

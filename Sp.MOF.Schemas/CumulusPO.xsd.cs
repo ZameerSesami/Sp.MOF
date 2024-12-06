@@ -29,7 +29,7 @@ namespace Sp.MOF.Schemas {
                     <xs:element name=""COMPANY_UEN"" type=""xs:string"" />
                     <xs:element name=""COMPANY_NAME"" type=""xs:string"" />
                     <xs:element name=""ORDER_CODE"" type=""xs:string"" />
-                    <xs:element name=""VARIATION_NUMBER"" type=""xs:unsignedByte"" />
+                    <xs:element name=""VARIATION_NUMBER"" type=""xs:string"" />
                     <xs:element name=""DESCRIPTION"" type=""xs:string"" />
                     <xs:element name=""STATUS_DATE"" type=""xs:date"" />
                     <xs:element name=""CURRENCY_CODE"" type=""xs:string"" />
@@ -44,12 +44,13 @@ namespace Sp.MOF.Schemas {
                             <xs:complexType>
                               <xs:sequence>
                                 <xs:element name=""CITY"" type=""xs:string"" />
-                                <xs:element name=""POSTALCODE"" type=""xs:unsignedInt"" />
+                                <xs:element name=""POSTALCODE"" type=""xs:string"" />
                                 <xs:element name=""ADDRESS_LINE"" type=""xs:string"" />
                                 <xs:element name=""COUNTRY"" type=""xs:string"" />
                               </xs:sequence>
                             </xs:complexType>
                           </xs:element>
+                          <xs:element name=""DELIVERY_DESTINATION"" type=""xs:string"" />
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
@@ -59,12 +60,12 @@ namespace Sp.MOF.Schemas {
                           <xs:element name=""ITEM"">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element name=""LINE_NUMBER"" type=""xs:unsignedByte"" />
+                                <xs:element name=""LINE_NUMBER"" type=""xs:string"" />
                                 <xs:element name=""DESCRIPTION"" type=""xs:string"" />
                                 <xs:element name=""UNIT_OF_MEASURE"" type=""xs:string"" />
-                                <xs:element name=""UNIT_PRICE"" type=""xs:unsignedShort"" />
-                                <xs:element name=""QUANTITY"" type=""xs:unsignedByte"" />
-                                <xs:element name=""TOTAL_AMOUNT"" type=""xs:unsignedShort"" />
+                                <xs:element name=""UNIT_PRICE"" type=""xs:string"" />
+                                <xs:element name=""QUANTITY"" type=""xs:string"" />
+                                <xs:element name=""TOTAL_AMOUNT"" type=""xs:string"" />
                               </xs:sequence>
                             </xs:complexType>
                           </xs:element>

@@ -7,8 +7,8 @@ namespace Sp.MOF.Schemas {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [SchemaType(SchemaTypeEnum.Document)]
     [System.SerializableAttribute()]
-    [SchemaRoots(new string[] {@"CustomizationID", @"ProfileID", @"ID", @"IssueDate", @"IssueTime", @"OrderTypeCode", @"Note", @"DocumentCurrencyCode", @"AccountingCost", @"EndDate", @"DocumentType", @"URI", @"EndpointID", @"Name", @"StreetName", @"AdditionalStreetName", @"CityName", @"PostalZone", @"CountrySubentity", @"IdentificationCode", @"CompanyID", @"RegistrationName", @"Telephone", @"ElectronicMail", @"Line", @"StartDate", @"SpecialTerms", @"ChargeIndicator", @"AllowanceChargeReason", @"Amount", 
-@"TaxAmount", @"LineExtensionAmount", @"TaxExclusiveAmount", @"TaxInclusiveAmount", @"AllowanceTotalAmount", @"ChargeTotalAmount", @"PayableRoundingAmount", @"PayableAmount", @"Quantity", @"PartialDeliveryIndicator", @"PriceAmount", @"BaseQuantity", @"BaseAmount", @"Description", @"Percent", @"Value", @"ItemClassificationCode"})]
+    [SchemaRoots(new string[] {@"CustomizationID", @"ProfileID", @"ID", @"IssueDate", @"IssueTime", @"OrderTypeCode", @"Note", @"DocumentCurrencyCode", @"AccountingCost", @"CustomerReference", @"EndDate", @"DocumentType", @"URI", @"EndpointID", @"Name", @"StreetName", @"AdditionalStreetName", @"CityName", @"PostalZone", @"CountrySubentity", @"IdentificationCode", @"CompanyID", @"RegistrationName", @"Telephone", @"ElectronicMail", @"Line", @"StartDate", @"SpecialTerms", @"ChargeIndicator", @"AllowanceChargeReason", 
+@"Amount", @"TaxAmount", @"LineExtensionAmount", @"TaxExclusiveAmount", @"TaxInclusiveAmount", @"AllowanceTotalAmount", @"ChargeTotalAmount", @"PayableRoundingAmount", @"PayableAmount", @"Quantity", @"PartialDeliveryIndicator", @"PriceAmount", @"BaseQuantity", @"BaseAmount", @"Description", @"Percent", @"Value", @"ItemClassificationCode"})]
     public sealed class PeppolPOMOF1 : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
@@ -42,6 +42,7 @@ namespace Sp.MOF.Schemas {
     </xs:complexType>
   </xs:element>
   <xs:element name=""AccountingCost"" type=""xs:string"" />
+  <xs:element name=""CustomerReference"" type=""xs:string"" />
   <xs:element name=""EndDate"" type=""xs:date"" />
   <xs:element name=""DocumentType"" type=""xs:string"" />
   <xs:element name=""URI"" type=""xs:string"" />
@@ -231,7 +232,7 @@ namespace Sp.MOF.Schemas {
         
         public override string[] RootNodes {
             get {
-                string[] _RootElements = new string [47];
+                string[] _RootElements = new string [48];
                 _RootElements[0] = "CustomizationID";
                 _RootElements[1] = "ProfileID";
                 _RootElements[2] = "ID";
@@ -241,44 +242,45 @@ namespace Sp.MOF.Schemas {
                 _RootElements[6] = "Note";
                 _RootElements[7] = "DocumentCurrencyCode";
                 _RootElements[8] = "AccountingCost";
-                _RootElements[9] = "EndDate";
-                _RootElements[10] = "DocumentType";
-                _RootElements[11] = "URI";
-                _RootElements[12] = "EndpointID";
-                _RootElements[13] = "Name";
-                _RootElements[14] = "StreetName";
-                _RootElements[15] = "AdditionalStreetName";
-                _RootElements[16] = "CityName";
-                _RootElements[17] = "PostalZone";
-                _RootElements[18] = "CountrySubentity";
-                _RootElements[19] = "IdentificationCode";
-                _RootElements[20] = "CompanyID";
-                _RootElements[21] = "RegistrationName";
-                _RootElements[22] = "Telephone";
-                _RootElements[23] = "ElectronicMail";
-                _RootElements[24] = "Line";
-                _RootElements[25] = "StartDate";
-                _RootElements[26] = "SpecialTerms";
-                _RootElements[27] = "ChargeIndicator";
-                _RootElements[28] = "AllowanceChargeReason";
-                _RootElements[29] = "Amount";
-                _RootElements[30] = "TaxAmount";
-                _RootElements[31] = "LineExtensionAmount";
-                _RootElements[32] = "TaxExclusiveAmount";
-                _RootElements[33] = "TaxInclusiveAmount";
-                _RootElements[34] = "AllowanceTotalAmount";
-                _RootElements[35] = "ChargeTotalAmount";
-                _RootElements[36] = "PayableRoundingAmount";
-                _RootElements[37] = "PayableAmount";
-                _RootElements[38] = "Quantity";
-                _RootElements[39] = "PartialDeliveryIndicator";
-                _RootElements[40] = "PriceAmount";
-                _RootElements[41] = "BaseQuantity";
-                _RootElements[42] = "BaseAmount";
-                _RootElements[43] = "Description";
-                _RootElements[44] = "Percent";
-                _RootElements[45] = "Value";
-                _RootElements[46] = "ItemClassificationCode";
+                _RootElements[9] = "CustomerReference";
+                _RootElements[10] = "EndDate";
+                _RootElements[11] = "DocumentType";
+                _RootElements[12] = "URI";
+                _RootElements[13] = "EndpointID";
+                _RootElements[14] = "Name";
+                _RootElements[15] = "StreetName";
+                _RootElements[16] = "AdditionalStreetName";
+                _RootElements[17] = "CityName";
+                _RootElements[18] = "PostalZone";
+                _RootElements[19] = "CountrySubentity";
+                _RootElements[20] = "IdentificationCode";
+                _RootElements[21] = "CompanyID";
+                _RootElements[22] = "RegistrationName";
+                _RootElements[23] = "Telephone";
+                _RootElements[24] = "ElectronicMail";
+                _RootElements[25] = "Line";
+                _RootElements[26] = "StartDate";
+                _RootElements[27] = "SpecialTerms";
+                _RootElements[28] = "ChargeIndicator";
+                _RootElements[29] = "AllowanceChargeReason";
+                _RootElements[30] = "Amount";
+                _RootElements[31] = "TaxAmount";
+                _RootElements[32] = "LineExtensionAmount";
+                _RootElements[33] = "TaxExclusiveAmount";
+                _RootElements[34] = "TaxInclusiveAmount";
+                _RootElements[35] = "AllowanceTotalAmount";
+                _RootElements[36] = "ChargeTotalAmount";
+                _RootElements[37] = "PayableRoundingAmount";
+                _RootElements[38] = "PayableAmount";
+                _RootElements[39] = "Quantity";
+                _RootElements[40] = "PartialDeliveryIndicator";
+                _RootElements[41] = "PriceAmount";
+                _RootElements[42] = "BaseQuantity";
+                _RootElements[43] = "BaseAmount";
+                _RootElements[44] = "Description";
+                _RootElements[45] = "Percent";
+                _RootElements[46] = "Value";
+                _RootElements[47] = "ItemClassificationCode";
                 return _RootElements;
             }
         }
@@ -593,6 +595,41 @@ namespace Sp.MOF.Schemas {
                 get {
                     string[] _RootElements = new string [1];
                     _RootElements[0] = "AccountingCost";
+                    return _RootElements;
+                }
+            }
+            
+            protected override object RawSchema {
+                get {
+                    return _rawSchema;
+                }
+                set {
+                    _rawSchema = value;
+                }
+            }
+        }
+        
+        [Schema(@"urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2",@"CustomerReference")]
+        [System.SerializableAttribute()]
+        [SchemaRoots(new string[] {@"CustomerReference"})]
+        public sealed class CustomerReference : Microsoft.XLANGs.BaseTypes.SchemaBase {
+            
+            [System.NonSerializedAttribute()]
+            private static object _rawSchema;
+            
+            public CustomerReference() {
+            }
+            
+            public override string XmlContent {
+                get {
+                    return _strSchema;
+                }
+            }
+            
+            public override string[] RootNodes {
+                get {
+                    string[] _RootElements = new string [1];
+                    _RootElements[0] = "CustomerReference";
                     return _RootElements;
                 }
             }

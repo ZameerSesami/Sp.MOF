@@ -18,7 +18,7 @@ namespace Sp.MOF.Schemas {
         
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
-<xs:schema xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:cac=""urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"" xmlns:cbc=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" attributeFormDefault=""unqualified"" elementFormDefault=""qualified"" targetNamespace=""urn:oasis:names:specification:ubl:schema:xsd:Order-2"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
+<xs:schema xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:cac=""urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"" xmlns:cbc=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" attributeFormDefault=""unqualified"" elementFormDefault=""unqualified"" targetNamespace=""urn:oasis:names:specification:ubl:schema:xsd:Order-2"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
   <xs:import schemaLocation=""Sp.MOF.Schemas.PeppolPOMOF1"" namespace=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" />
   <xs:import schemaLocation=""Sp.MOF.Schemas.PeppolPOMOF2"" namespace=""urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"" />
   <xs:annotation>
@@ -39,6 +39,7 @@ namespace Sp.MOF.Schemas {
         <xs:element ref=""cbc:IssueTime"" />
         <xs:element ref=""cbc:Note"" />
         <xs:element ref=""cbc:DocumentCurrencyCode"" />
+        <xs:element ref=""cbc:CustomerReference"" />
         <xs:element ref=""cbc:AccountingCost"" />
         <xs:element ref=""cac:ValidityPeriod"" />
         <xs:element ref=""cac:QuotationDocumentReference"" />

@@ -178,6 +178,13 @@ namespace Sp.MOF.Schemas {
           <xs:complexType>
             <xs:sequence>
               <xs:element xmlns:q27=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" ref=""q27:EndpointID"" />
+              <xs:element name=""PartyName"">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element xmlns:q118=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" ref=""q118:Name"" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
               <xs:element name=""PartyIdentification"">
                 <xs:complexType>
                   <xs:sequence>
@@ -214,6 +221,21 @@ namespace Sp.MOF.Schemas {
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element xmlns:q36=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" ref=""q36:RegistrationName"" />
+                    <xs:element xmlns:q121=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" ref=""q121:CompanyID"" />
+                    <xs:element name=""RegistrationAddress"">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element xmlns:q122=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" ref=""q122:CityName"" />
+                          <xs:element name=""Country"">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element xmlns:q123=""urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"" ref=""q123:IdentificationCode"" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>

@@ -22,6 +22,7 @@ namespace Sp.MOF.CallPeppolAPI
         private string Authorization_UAT = Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "APIAuthorization_MOF_UAT");
         private string PEPPOLID_UAT = Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "APIPEPPOLID_MOF_UAT");
         //Prod variables
+        private string APIURL_PO_PROD = Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "APIURL_PO_MOF_PROD");
         private string APIURL_Prod = Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "APIURL_MOF_Prod");
         private string SourceSystemID_Prod = Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "APISourceSystemID_MOF_Prod");
         private string ChannelID_Prod = Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "APIChannelID_MOF_Prod");
@@ -30,11 +31,11 @@ namespace Sp.MOF.CallPeppolAPI
         private string Authorization_Prod = Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "APIAuthorization_MOF_Prod");
         private string PEPPOLID_Prod = Sp.MOF.Common.SSOClientHelper.Read("Sp.MOF", "APIPEPPOLID_MOF_Prod");
 
-        public string PostResponseData(string requestXML, string ArchivePathXML)
+        public string PostResponseData(string requestXML, string ArchivePathXML, string DocType)
         {
             try
             {
-                var apiresp = ProcessResponseData(requestXML, ArchivePathXML);
+                var apiresp = ProcessResponseData(requestXML, ArchivePathXML, DocType);
                 return apiresp;
             }
             catch (Exception ex)
@@ -43,7 +44,7 @@ namespace Sp.MOF.CallPeppolAPI
             }
         }
 
-        public string ProcessResponseData(string xmlrequest, string ArchivePath)
+        public string ProcessResponseData(string xmlrequest, string ArchivePath, string DocType)
         {
             string jsonText = "", ErrorLine = "0";
             try
@@ -61,14 +62,29 @@ namespace Sp.MOF.CallPeppolAPI
 
                 //create RestSharp client and POST request object
                 string URL = "";
-                if (UseProdAPI == "No")
+                if (DocType == "PO")
                 {
-                    URL = APIURL_UAT;
+                    if (UseProdAPI == "No")
+                    {
+                        URL = APIURL_PO_UAT;
+                    }
+                    else
+                    {
+                        URL = APIURL_PO_PROD;
+                    }
                 }
                 else
                 {
-                    URL = APIURL_Prod;
+                    if (UseProdAPI == "No")
+                    {
+                        URL = APIURL_UAT;
+                    }
+                    else
+                    {
+                        URL = APIURL_Prod;
+                    }
                 }
+
                 var client = new RestClient(URL);
                 var request = new RestRequest();
                 request.Method = Method.POST;
@@ -112,6 +128,10 @@ namespace Sp.MOF.CallPeppolAPI
                     var objAPIresponse = JsonConvert.DeserializeObject<ItemsFailureModel>(response.Content);
                     if (objAPIresponse.Succeed == true)
                     {
+                        if (DocType == "PO")
+                        {
+                            return "<PeppolAPIResponse><Succeed>true</Succeed><Timestamp>" + objAPIresponse.Timestamp.ToString() + "</Timestamp><InvoiceSubmissionID>" + objAPIresponse.POSubmissionID + "</InvoiceSubmissionID></PeppolAPIResponse>";
+                        }
                         return "<PeppolAPIResponse><Succeed>true</Succeed><Timestamp>" + objAPIresponse.Timestamp.ToString() + "</Timestamp><InvoiceSubmissionID>" + objAPIresponse.InvoiceSubmissionID + "</InvoiceSubmissionID></PeppolAPIResponse>";
                     }
                     else

@@ -23,6 +23,7 @@ namespace Sp.MOF.Schemas {
   </xs:annotation>
   <xs:complexType name=""StoredProcedureResultSet0"">
     <xs:sequence>
+      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""DocumentID"" nillable=""true"" type=""xs:string"" />
       <xs:element minOccurs=""0"" maxOccurs=""1"" name=""resStatus"" nillable=""true"" type=""xs:string"" />
       <xs:element minOccurs=""0"" maxOccurs=""1"" name=""resDescription"" nillable=""true"" type=""xs:string"" />
     </xs:sequence>

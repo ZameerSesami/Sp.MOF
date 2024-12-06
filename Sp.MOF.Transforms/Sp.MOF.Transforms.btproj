@@ -76,6 +76,10 @@
     <None Include="signingmofkey.snk" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Sp.MOF.Common\Sp.MOF.Common.csproj">
+      <Project>{c01503d3-dfac-4580-9b53-09f93c021239}</Project>
+      <Name>Sp.MOF.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Sp.MOF.Schemas\Sp.MOF.Schemas.btproj">
       <Project>{bae8ac3c-0681-418a-89af-2ede53ec5631}</Project>
       <Name>Sp.MOF.Schemas</Name>
@@ -94,13 +98,26 @@
       <Namespace>Sp.MOF.Transforms</Namespace>
       <SubType>Task</SubType>
     </Map>
-    <Content Include="Map_CumulusPOXML_DB.xsl" />
-    <Map Include="Map_DBPO_PeppolPO.btm">
-      <TypeName>Map_DBPO_PeppolPO</TypeName>
+    <Map Include="Map_CumulusPOResp_PeppolPOXML.btm">
+      <TypeName>Map_CumulusPOResp_PeppolPOXML</TypeName>
       <Namespace>Sp.MOF.Transforms</Namespace>
       <SubType>Task</SubType>
     </Map>
+    <Content Include="Map_CumulusPOResp_PeppolPOXML.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Map_CumulusPOXML_DB.xsl">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Map_DBPO_PeppolPO.xsl" />
+    <Map Include="Map_GeBizuspPOResp_PeppolPOXML.btm">
+      <TypeName>Map_GeBizuspPOResp_PeppolPOXML</TypeName>
+      <Namespace>Sp.MOF.Transforms</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Content Include="Map_GeBizuspPOResp_PeppolPOXML.xsl">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Map_PeppolGeBizXML_DB.xsl" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

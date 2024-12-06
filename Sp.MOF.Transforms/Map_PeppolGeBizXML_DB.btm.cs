@@ -31,6 +31,9 @@ namespace Sp.MOF.Transforms {
           <ns3:Description>
             <xsl:value-of select=""HEADER/DESCRIPTION/text()"" />
           </ns3:Description>
+          <ns3:OrderTypeStatus>
+            <xsl:value-of select=""HEADER/STATUS/text()"" />
+          </ns3:OrderTypeStatus>
           <ns3:StatusDate>
             <xsl:value-of select=""HEADER/STATUS_DATE/text()"" />
           </ns3:StatusDate>
@@ -67,6 +70,9 @@ namespace Sp.MOF.Transforms {
           <ns3:SupplierContactEmail>
             <xsl:value-of select=""HEADER/SUPPLIER/CONTACT_EMAIL/text()"" />
           </ns3:SupplierContactEmail>
+          <ns3:DeliveryDestination>
+            <xsl:value-of select=""ITEMS/ITEM/LOCATIONS/LOCATION/DELIVERY_DESTINATION/text()"" />
+          </ns3:DeliveryDestination>
           <ns3:SiteID>
             <xsl:value-of select=""HEADER/SUPPLIER/SITES/SITE/ID/text()"" />
           </ns3:SiteID>
@@ -140,7 +146,7 @@ namespace Sp.MOF.Transforms {
               </xsl:attribute>
             </ns3:SiteRegionCode>
           </xsl:if>
-          <xsl:if test=""string($var:v3)='false'"">
+          <xsl:if test=""string($  var:v3)='false'"">
             <ns3:SiteRegionCode>
               <xsl:value-of select=""HEADER/SUPPLIER/SITES/SITE/REGION_CODE/text()"" />
             </ns3:SiteRegionCode>
@@ -171,7 +177,10 @@ namespace Sp.MOF.Transforms {
           </ns3:BuyerPhone>
           <ns3:BuyerEmail>
             <xsl:value-of select=""HEADER/BUYER/EMAIL/text()"" />
-          </ns3:BuyerEmail>
+          </ns3:BuyerEmail> 
+          <ns3:InterfaceFileName>
+            <xsl:value-of select=""InterfaceFileName/text()"" />
+          </ns3:InterfaceFileName>
         </ns3:POHeaderTableType>
       </ns0:POHeaderType>
       <ns0:PODetailsType>

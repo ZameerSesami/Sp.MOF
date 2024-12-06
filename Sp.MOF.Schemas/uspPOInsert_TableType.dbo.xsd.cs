@@ -72,6 +72,13 @@ namespace Sp.MOF.Schemas {
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
+      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""OrderTypeStatus"" nillable=""true"">
+        <xs:simpleType>
+          <xs:restriction base=""xs:string"">
+            <xs:maxLength value=""50"" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
       <xs:element minOccurs=""0"" maxOccurs=""1"" name=""StatusDate"" nillable=""true"">
         <xs:simpleType>
           <xs:restriction base=""xs:string"">
@@ -153,6 +160,13 @@ namespace Sp.MOF.Schemas {
         <xs:simpleType>
           <xs:restriction base=""xs:string"">
             <xs:maxLength value=""150"" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""DeliveryDestination"" nillable=""true"">
+        <xs:simpleType>
+          <xs:restriction base=""xs:string"">
+            <xs:maxLength value=""500"" />
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -349,6 +363,13 @@ namespace Sp.MOF.Schemas {
         <xs:simpleType>
           <xs:restriction base=""xs:string"">
             <xs:maxLength value=""50"" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""InterfaceFileName"" nillable=""true"">
+        <xs:simpleType>
+          <xs:restriction base=""xs:string"">
+            <xs:maxLength value=""200"" />
           </xs:restriction>
         </xs:simpleType>
       </xs:element>

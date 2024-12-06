@@ -82,6 +82,66 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="SSOValuePeppolIdType.xsd">
+      <TypeName>SSOValuePeppolIdType</TypeName>
+      <Namespace>Sp.MOF.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspErrorEmails_TypedProcedure.dbo.xsd">
+      <TypeName>uspErrorEmails_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.MOF.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspCumulusPeppolSent_TypedPolling.InterfaceCumulusDocIdsPeppolSent.xsd">
+      <TypeName>uspCumulusPeppolSent_TypedPolling_InterfaceCumulusDocIdsPeppolSent</TypeName>
+      <Namespace>Sp.MOF.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspGeBizDocIdsPeppolSent_TypedPolling.InterfaceGeBizDocIdsPeppolSent.xsd">
+      <TypeName>uspGeBizDocIdsPeppolSent_TypedPolling_InterfaceGeBizDocIdsPeppolSent</TypeName>
+      <Namespace>Sp.MOF.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPOStatusUpdate_TypedProcedure.dbo.xsd">
+      <TypeName>uspPOStatusUpdate_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.MOF.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspMOFPeppolPOStatus_ProcedureResultSet.dbo.InterfaceMOFPOStatus.xsd">
+      <TypeName>uspMOFPeppolPOStatus_ProcedureResultSet_dbo_InterfaceMOFPOStatus</TypeName>
+      <Namespace>Sp.MOF.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspMOFPeppolPOStatus_TypedProcedure.dbo.xsd">
+      <TypeName>uspMOFPeppolPOStatus_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.MOF.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspAPIStatusUpd_TypedProcedure.dbo.xsd">
+      <TypeName>uspAPIStatusUpd_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.MOF.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspGeBizPOData_ProcedureResultSet.dbo.InterfaceGeBizPOData.xsd">
+      <TypeName>uspGeBizPOData_ProcedureResultSet_dbo_InterfaceGeBizPOData</TypeName>
+      <Namespace>Sp.MOF.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspGeBizPOData_TypedProcedure.dbo.xsd">
+      <TypeName>uspGeBizPOData_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.MOF.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspCumulusPOData_ProcedureResultSet.dbo.InterfaceCumulusPOData.xsd">
+      <TypeName>uspCumulusPOData_ProcedureResultSet_dbo_InterfaceCumulusPOData</TypeName>
+      <Namespace>Sp.MOF.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspCumulusPOData_TypedProcedure.dbo.xsd">
+      <TypeName>uspCumulusPOData_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.MOF.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="uspPollGeBizPODocIds_TypedPolling.InterfacePODocIdsGeBiz.xsd">
       <TypeName>uspPollGeBizPODocIds_TypedPolling_InterfacePODocIdsGeBiz</TypeName>
       <Namespace>Sp.MOF.Schemas</Namespace>
@@ -89,21 +149,6 @@
     </Schema>
     <Schema Include="uspPollCumulusPODocIds_TypedPolling.InterfacePODocIdsCumulus.xsd">
       <TypeName>uspPollCumulusPODocIds_TypedPolling_InterfacePODocIdsCumulus</TypeName>
-      <Namespace>Sp.MOF.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspPOUpdate_TypedProcedure.dbo.xsd">
-      <TypeName>uspPOUpdate_TypedProcedure_dbo</TypeName>
-      <Namespace>Sp.MOF.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspPOData_ProcedureResultSet.dbo.InterfaceMOFPOData.xsd">
-      <TypeName>uspPOData_ProcedureResultSet_dbo_InterfaceMOFPOData</TypeName>
-      <Namespace>Sp.MOF.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspPOData_TypedProcedure.dbo.xsd">
-      <TypeName>uspPOData_TypedProcedure_dbo</TypeName>
       <Namespace>Sp.MOF.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
@@ -157,13 +202,17 @@
       <Namespace>Sp.MOF.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
+    <Schema Include="POValidations.xsd">
+      <TypeName>POValidations</TypeName>
+      <Namespace>Sp.MOF.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <None Include="signingmofkey.snk" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo1.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo2.xml" />
-    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo3.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo4.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo5.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />

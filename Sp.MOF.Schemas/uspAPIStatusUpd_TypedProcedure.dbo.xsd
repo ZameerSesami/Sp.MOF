@@ -5,10 +5,10 @@
       <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">TypedProcedure.dbo</fileNameHint>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="InterfaceMOFPOStatusUpdate">
+  <xs:element name="InterfaceMOFPOAPIStatusUpdate">
     <xs:annotation>
       <xs:documentation>
-        <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">TypedProcedure/dbo/InterfaceMOFPOStatusUpdate</doc:action>
+        <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">TypedProcedure/dbo/InterfaceMOFPOAPIStatusUpdate</doc:action>
       </xs:documentation>
     </xs:annotation>
     <xs:complexType>
@@ -24,20 +24,6 @@
           <xs:simpleType>
             <xs:restriction base="xs:string">
               <xs:maxLength value="100" />
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element minOccurs="0" maxOccurs="1" name="DocumentStatus" nillable="true">
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:maxLength value="50" />
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element minOccurs="0" maxOccurs="1" name="InterfaceStatus" nillable="true">
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:maxLength value="50" />
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
@@ -62,13 +48,20 @@
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="PeppolPOXMLPath" nillable="true">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:maxLength value="500" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="InterfaceMOFPOStatusUpdateResponse">
+  <xs:element name="InterfaceMOFPOAPIStatusUpdateResponse">
     <xs:annotation>
       <xs:documentation>
-        <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">TypedProcedure/dbo/InterfaceMOFPOStatusUpdate/response</doc:action>
+        <doc:action xmlns:doc="http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation">TypedProcedure/dbo/InterfaceMOFPOAPIStatusUpdate/response</doc:action>
       </xs:documentation>
     </xs:annotation>
     <xs:complexType>
