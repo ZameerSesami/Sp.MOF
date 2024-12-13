@@ -22,14 +22,16 @@
       <xs:element minOccurs="0" maxOccurs="1" name="BuyerCustomerPartyIdentificationID" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="BuyerCustomerPartyName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="BuyerCustomerPartyRegName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="BuyerCountryCode" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="BuyerCustomerPartyContactName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="BuyerCustomerPartyContactEmail" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="BuyerCustomerPartyContactPhone" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="SellerSupplierPartyEndPointID" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="SellerSupplierPartyIdentificationID" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="SellerPartyName" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" maxOccurs="1" name="SellerSupplierPartyStreet" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" maxOccurs="1" name="SellerSupplierPartyAddtlStreet" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="SellerSupplierPartyAddress1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="SellerSupplierPartyAddress2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="SellerSupplierPartyAddress3" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="SellerSupplierPartyCity" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="SellerSupplierPartyPostalZone" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="SellerSupplierPartyCountryCode" nillable="true" type="xs:string" />

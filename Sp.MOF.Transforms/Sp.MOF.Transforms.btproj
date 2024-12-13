@@ -98,26 +98,10 @@
       <Namespace>Sp.MOF.Transforms</Namespace>
       <SubType>Task</SubType>
     </Map>
-    <Map Include="Map_CumulusPOResp_PeppolPOXML.btm">
-      <TypeName>Map_CumulusPOResp_PeppolPOXML</TypeName>
-      <Namespace>Sp.MOF.Transforms</Namespace>
-      <SubType>Task</SubType>
-    </Map>
-    <Content Include="Map_CumulusPOResp_PeppolPOXML.xsl">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Map_CumulusPOXML_DB.xsl">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Map_DBPO_PeppolPO.xsl" />
-    <Map Include="Map_GeBizuspPOResp_PeppolPOXML.btm">
-      <TypeName>Map_GeBizuspPOResp_PeppolPOXML</TypeName>
-      <Namespace>Sp.MOF.Transforms</Namespace>
-      <SubType>Task</SubType>
-    </Map>
-    <Content Include="Map_GeBizuspPOResp_PeppolPOXML.xsl">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Map_PeppolGeBizXML_DB.xsl" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
